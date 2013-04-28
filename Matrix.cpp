@@ -61,6 +61,13 @@ Matrix Matrix::operator+(const Matrix& val){
     return m;
 }
 
+Matrix Matrix::operator+(const double val){
+    Matrix m = Matrix(m_rows,m_columns);
+    for(int i=0; i< m_rows*m_columns; i++)
+        m.m_data[i] = m_data[i] + val;
+    return m;
+}
+
 Matrix Matrix::operator-(const Matrix& val){
     Matrix m = Matrix(m_rows,m_columns);
     try{

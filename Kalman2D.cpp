@@ -52,13 +52,15 @@ double Kalman2D::Update(double mx,double mv, double dt){
     // P = F*P*F^T + Q
     m_p = f * m_p * (f.TransposeMtr()) + m_q;
     //修正卡尔曼混合系数
-	Matrix tmp = h * m_p * ht;
+	Matrix tmp = h * m_p * ht + m_r;
     Matrix sinv = tmp.InverseMtr();
     Matrix k = m_p * ht * sinv;
     //修正系统状态
-
     m_x = (id - k) * m_x + k * z;
+    //修正系统均方差
+    m_p = (id - k*h) * m_p;
 
     return m_x.Get(1,1);
 }
+
 

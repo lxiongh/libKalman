@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1367063368 source:f:\github\libkalman\kalman2d.cpp
+	"Kalman2D.h"
+
+1367063368 f:\github\libkalman\kalman2d.h
+	"Matrix.h"
+
+1367063368 f:\github\libkalman\matrix.h
+	<cstddef>
+	<iostream>
+	<stdlib.h>
+	<math.h>
+	<stdio.h>
+
+1367063368 source:f:\github\libkalman\matrix.cpp
+	"Matrix.h"
+
+1367063368 source:f:\github\libkalman\random.cpp
+	"Random.h"
+
+1367063368 f:\github\libkalman\random.h
+	<limits.h>
+
+1367063368 source:f:\github\libkalman\main.cpp
+	<iostream>
+	"Matrix.h"
+	"stdlib.h"
+	"GpsPath.h"
+	"Kalman2D.h"
+
+1367063368 f:\github\libkalman\gpspath.h
+	<vector>
+	<math.h>
+	"Random.h"
+
+1367063368 source:f:\github\libkalman\gpspath.cpp
+	"GpsPath.h"
+

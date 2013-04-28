@@ -18,6 +18,7 @@ class Matrix
         Matrix(const Matrix& other);
         Matrix& operator=(const Matrix& other);
         Matrix operator+(const Matrix& val);
+        Matrix operator+(const double val);
         Matrix operator-(const Matrix& val);
         Matrix operator*(const Matrix& val);
         int Getrows() const{ return m_rows; }

@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="GpsPath.cpp" />
+		<Unit filename="GpsPath.h" />
+		<Unit filename="Kalman2D.cpp" />
+		<Unit filename="Kalman2D.h" />
+		<Unit filename="Matrix.cpp" />
+		<Unit filename="Matrix.h" />
+		<Unit filename="Random.cpp" />
+		<Unit filename="Random.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

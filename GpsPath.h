@@ -15,8 +15,7 @@ class GpsPath
         virtual ~GpsPath();
         void CreatePath();
         void SimulateGPS();
-    protected:
-    private:
+        int GetPosOverSampling(){return positionOverSampling;}
 
         vector<double> Ideal_Time;
         vector<double> Ideal_X;
@@ -31,6 +30,8 @@ class GpsPath
         vector<double> Meas_VY;
         vector<double> Meas_AX;
         vector<double> Meas_AY;
+    protected:
+    private:
 
         double GPS_Position1Sigma;
         double GPS_Velocity1Sigma;
